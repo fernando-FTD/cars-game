@@ -12,11 +12,11 @@ bool game = true;
 
 void Char(){
 	mvprintw(((maxY-2)-4)+y, x, "    0    ");
-    mvprintw(((maxY-2)-3)+y, x, " 0 000 0 ");
-    mvprintw(((maxY-2)-2)+y, x, "000000000");
-    mvprintw(((maxY-2)-1)+y, x, "  00000  ");
-    mvprintw((maxY-2)+y, x,     "000000000");
-    refresh();
+    	mvprintw(((maxY-2)-3)+y, x, " 0 000 0 ");
+    	mvprintw(((maxY-2)-2)+y, x, "000000000");
+    	mvprintw(((maxY-2)-1)+y, x, "  00000  ");
+    	mvprintw((maxY-2)+y, x,     "000000000");
+    	refresh();
 }
 
 void Enemy(){
@@ -36,19 +36,19 @@ void Enemy(){
     
     
 	for(int i=0 ; i <maxY+10;i++){
-	mvprintw(-1+i, h+acak, "         ");	
+	mvprintw(-1+i, h+acak,"         ");	
 	mvprintw(0+i, h+acak, "ooooooooo");
-    mvprintw(1+i, h+acak, "  ooooo  ");
-    mvprintw(2+i, h+acak, "ooooooooo");
-    mvprintw(3+i, h+acak, " o ooo o ");																				
-    mvprintw(4+i, h+acak, "    o    ");
+    	mvprintw(1+i, h+acak, "  ooooo  ");
+    	mvprintw(2+i, h+acak, "ooooooooo");
+    	mvprintw(3+i, h+acak, " o ooo o ");																				
+    	mvprintw(4+i, h+acak, "    o    ");
     
-    mvprintw(-8+i, k-acaak, "         ");	
+    	mvprintw(-8+i, k-acaak, "         ");	
 	mvprintw(-7+i, k-acaak, "ooooooooo");
-    mvprintw(-6+i, k-acaak, "  ooooo  ");
-    mvprintw(-5+i, k-acaak, "ooooooooo");
-    mvprintw(-4+i, k-acaak, " o ooo o ");																				
-    mvprintw(-3+i, k-acaak, "    o    ");
+    	mvprintw(-6+i, k-acaak, "  ooooo  ");
+    	mvprintw(-5+i, k-acaak, "ooooooooo");
+    	mvprintw(-4+i, k-acaak, " o ooo o ");																				
+    	mvprintw(-3+i, k-acaak, "    o    ");
 	
 	refresh();
     Sleep(50);
